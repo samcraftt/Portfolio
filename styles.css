@@ -71,7 +71,6 @@ h1, h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     padding-top: 20px; /* Add padding for spacing at the top */
-    text-align: center; /* Center the heading and image */
 }
 
 .project-card:hover {
@@ -83,12 +82,18 @@ h1, h2 {
     height: 80px; /* Maintain aspect ratio */
     border-radius: 50%; /* Make image circular */
     object-fit: contain; /* Ensure image is fully visible */
+    display: block;
     margin: 0 auto; /* Center the image horizontally */
+}
+
+.project-card h3 {
+    text-align: center; /* Center the headings */
+    margin-bottom: 0.5rem;
 }
 
 .project-card .content {
     padding: 1rem;
-    text-align: left; /* Align text and links to the left */
+    text-align: left; /* Align paragraphs and links to the left */
 }
 
 #contact-form {
