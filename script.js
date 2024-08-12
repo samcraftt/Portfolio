@@ -9,9 +9,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Fetch and display projects
+    fetchProjects();
+
     // Handle contact form submission
     document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
 });
+
+async function fetchProjects() {
+
+    const projectGrid = document.querySelector('.project-grid');
+    projects.forEach(project => {
+        const projectCard = createProjectCard(project);
+        projectGrid.appendChild(projectCard);
+    });
+}
 
 function createProjectCard(project) {
     const card = document.createElement('div');
