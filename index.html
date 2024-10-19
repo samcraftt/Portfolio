@@ -3,90 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Craft - Portfolio</title>
+    <title>Sam Craft - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <link rel="icon" href="sc.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li style="color: white;">Samuel Craft | CS and Math | Boston College</li>
-            </ul>
+            <div class="container">
+                <h1 class="logo">Sam Craft</h1 class="logo">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Computer Science | Boston College</h2>
+            </div>
+        </section>
+
         <section id="about">
-            <h2>About Me</h2>
-            <p>I am an undergraduate in Boston College’s Gabelli Presidential Scholars Program studying computer science and mathematics. I am particularly interested in software engineering, educational technology, prompt engineering, and quantitative trading, and I have work experience in computer science education, mathematics research, financial analysis, and software development.</p>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I am an undergraduate in Boston College's Gabelli Presidential Scholars Program
+                    studying computer science and mathematics, interested and experienced in
+                    software engineering and educational technology.
+                </p>
+                <br>
+                <p>
+                    I am continually fine-tuning two main projects:
+                    <a href="https://jamliterate.com" target="_blank">Jamliterate</a>, a web application that
+                    automatically generates well-grounded flashcards based on any text, and the
+                    <a href="https://apps.apple.com/app/the-david-game/id6627351419" target="_blank">David Game</a>,
+                    a multiplayer drawing, guessing, and storytelling game available for
+                    download on the Apple App Store.
+                </p>
+                <br>
+                <p>
+                    I work as a part-time software engineer at
+                    <a href="https://neurolyze.net" target="_blank">NeuroLyze</a>, where I lead iOS
+                    app development and research methodologies of processing sports-related impact data
+                    collected by a microcontroller to provide granular insight on concussion risk to athletes
+                    and coaches of contacts sports. I also work as a part-time teaching
+                    assistant in the computer science department at BC, assisting in Data Structures (last semester) and CS I (currently).
+                </p>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-              
-        <div class="project-card">
-            <img src="images/favicon.png" alt="Jamliterate">
-            <div class="content">
-                <h3>Jamliterate: Simplified Studying</h3>
-                <p>An online learning platform built with Flask, PostgreSQL, and Google Cloud that leverages the OpenAI API to streamline the creation and usage of study tools.</p>
-                <hr>
-                <a href="https://jamliterate.com" target="_blank">Visit the Site</a><br>
-                <a href="https://github.com/samcraftt/Jamliterate" target="_blank">View the Code</a>
-            </div>
-        </div>
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="images/favicon.png" alt="Jamliterate">
+                        <div class="content">
+                            <h3>Jamliterate: Simplified Studying</h3>
+                            <p>Automatically generate well-grounded study flashcards based on any text.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="project-links">
+                                <a href="https://jamliterate.com" target="_blank" class="btn">Try it!</a>
+                                <a href="https://github.com/samcraftt/Jamliterate" target="_blank" class="btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="project-card">
-            <img src="images/davidgamecircle.png" alt="DavidGame">
-            <div class="content">
-                <h3>The David Game</h3>
-                <p>A multiplayer iOS application that digitalizes my family's favorite paper and pencil game. Built with Swift, Xcode, and Firebase, and monetized with AdMob.</p>
-                <hr>
-                <a href="https://apps.apple.com/app/the-david-game/id6627351419" target="_blank">Try the App</a><br>
-              <a href="https://github.com/samcraftt/DavidGame" target="_blank">View the Code</a>
-            </div>
-        </div>
+                    <div class="project-card">
+                        <img src="images/davidgamecircle.png" alt="DavidGame">
+                        <div class="content">
+                            <h3>The David Game</h3>
+                            <p>Tell and illustrate creative stories with your friends.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="project-links">
+                                <a href="https://apps.apple.com/app/the-david-game/id6627351419" target="_blank" class="btn">Try it!</a>
+                                <a href="https://github.com/samcraftt/DavidGame" target="_blank" class="btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="project-card">
-            <img src="images/simonscolors.png" alt="SimonsColors">
-            <div class="content">
-                <h3>Simon's Colors: Memory Game</h3>
-                <p>An iOS application that mimics the classic Simon color memorization game. Built with Swift and Xcode, and monetized with AdMob.</p>
-               <hr>
-              <a href="https://github.com/samcraftt/SimonsColors" target="_blank">View the Code</a>
-            </div>
-        </div>
+                    <div class="project-card">
+                        <img src="images/huehopper.png" alt="HueHopper">
+                        <div class="content">
+                            <h3>Hue Hopper</h3>
+                            <p>Watch and memorize colors as they appear, then recite the pattern.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="project-links">
+                                <a href="" target="_blank" class="btn">Try it!</a>
+                                <a href="https://github.com/samcraftt/SimonsColors" target="_blank" class="btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="project-card">
-            <img src="images/cprogramming.png" alt="CPrograms">
-            <div class="content">
-                <h3>Systems-Level C Programming</h3>
-                <hr>
-                <a href="https://github.com/samcraftt/Shell" target="_blank">Coding a Shell</a><br>
-              <a href="https://github.com/samcraftt/Zip" target="_blank">Zipping and Unzipping Files</a><br>
-            <a href="https://github.com/samcraftt/Stats" target="_blank">Computing Statistics</a><br>
-              <a href="https://github.com/samcraftt/Counts" target="_blank">Counting Words, Lines, and Characters</a>
+                    <div class="project-card">
+                        <img src="images/cprogramming.png" alt="CPrograms">
+                        <div class="content">
+                            <h3>Low Level C Programming</h3>
+                            <p>Coding a shell, zip/unzip files, computing statistics, word/line/char count.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="project-links">
+                                <a href="https://github.com/samcraftt" target="_blank" class="btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-          
         </section>
 
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Text or Call: <a href="tel:+17812648136">+1 (781) 264-8136</a></p>
-            <p>Email: <a href="mailto:craftsa@bc.edu">craftsa@bc.edu</a></p>
-        </section>
-        <section id="socials">
-            <h2>Socials</h2>
-            <p>LinkedIn: <a href="https://linkedin.com/in/samuelcraft1">samuelcraft1</a></p>
-            <p>GitHub: <a href="https://github.com/samcraftt">samcraftt</a></p>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> <a href="tel:+17812648136">+1 (781) 264-8136</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:craftsam28@gmail.com">craftsam28@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/samuelcraft1" target="_blank">LinkedIn: samuelcraft1</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/samcraftt" target="_blank">GitHub: samcraftt</a></p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Live the Fourth</p>
+        <div class="container">
+            <p>Live the Fourth</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
